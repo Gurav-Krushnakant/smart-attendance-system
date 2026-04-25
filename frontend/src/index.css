@@ -1,0 +1,107 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #4361ee;
+  --secondary-color: #3f37c9;
+  --success-color: #4cc9f0;
+  --danger-color: #f72585;
+  --background-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-dark: #2b2d42;
+  --text-muted: #8d99ae;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Premium Card Styling */
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--card-bg);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-weight: 600;
+  padding: 1.5rem;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--primary-color) !important;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  padding: 2rem 0;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.stat-card .icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.stat-card .value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.table-custom {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table-custom thead {
+  background-color: #f1f3f5;
+}
+
+.badge-custom {
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
