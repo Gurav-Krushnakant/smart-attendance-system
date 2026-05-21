@@ -34,8 +34,3 @@ npm install
 npm run dev
 ```
 
-### Default Credentials (from Seeder)
-- **Password for all**: `password123`
-- **Admin**: `admin@college.com`
-- **Teacher**: `teacher1@college.com`
-- **Student**: `student1@college.com`
